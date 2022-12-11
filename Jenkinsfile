@@ -19,9 +19,3 @@ pipeline {
         }
     }
 }
-post {
-        always {
-           
-           emailext body: 'pipeline status', subject: 'failed build', to: 'ravirajmcet@gmail.com'
-    }
-}
